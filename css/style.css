@@ -373,3 +373,50 @@ body {
 		text-align: center;
 	}
 }
+
+@media (max-width: 400px) {
+	.wrapper {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.nav {
+		display: flex;
+		flex-direction: column;
+		margin-right: 45px;
+	}
+	.nav > li:first-child {
+		padding-left: 45px;
+	}
+	.nav > li::before {
+		display: none;
+	}
+	.title {
+		font-size: 35px;
+	}
+	.description {
+		font-size: 19px;
+	}
+	.h2 {
+		font-size: 20px;
+		padding-right: 92px;
+	}
+	.menu {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu > li > a.active {
+		display: none;
+	}
+	.number {
+		font-size: 55px;
+	}
+	.btn-create {
+		font-size: 12px;
+		background-size: contain;
+	}
+	.footer {
+		height: 22px;
+		font-size: 13px;
+		padding: 22px 10px;
+	}
+}
